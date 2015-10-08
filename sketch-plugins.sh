@@ -13,16 +13,8 @@ cd sketch-plugins
 cd plugins
 find . -mindepth 2 -type f -print -exec mv {} . \;
 rm -R -- */
-rm *.txt
-rm *.json
-rm *.csv
-rm *.md
-rm *.html
-rm *.py
-rm AUTHORS
-rm CONTRIBUTORS
 cd ..
-mv plugins/* /Library/Application Support/com.bohemiancoding.sketch3/Plugins
+mv plugins/* ~/Library/Application Support/com.bohemiancoding.sketch3/Plugins
 
 echo "Plugins installed; Cleaning up files..."
 cd ~/Documents/
