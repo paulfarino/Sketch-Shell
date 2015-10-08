@@ -13,6 +13,8 @@ cd sketch-plugins
 cd plugins
 find . -mindepth 2 -type f -print -exec mv {} . \;
 rm -R -- */
+rm *.md
+rm LICENSE
 cd ..
 mv plugins/* ~/Library/Application\ Support/com.bohemiancoding.sketch3/Plugins/
 
