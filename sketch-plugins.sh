@@ -8,7 +8,7 @@ cd ~/Documents/
 curl -L https://github.com/paulfarino/Sketch-Shell/tarball/master -o master.tar.gz
 echo "Extracting the plugins..."
 mkdir -p sketch-plugins/plugins
-tar -zxf master.tar.gz -C sketch-plugins/plugins
+tar -zf master.tar.gz -C sketch-plugins/plugins
 cd sketch-plugins
 cd plugins
 find . -mindepth 2 -type f -print -exec mv {} . \;
