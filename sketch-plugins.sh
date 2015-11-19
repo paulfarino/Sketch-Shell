@@ -9,14 +9,14 @@ curl -L https://github.com/paulfarino/Sketch-Shell/tarball/master -o master.tar.
 echo "Extracting the plugins..."
 mkdir -p sketch-plugins/plugins
 tar -zxf master.tar.gz -C sketch-plugins/plugins
-rm -rf *.md
-rm -rf LICENSE
 cd sketch-plugins
 cd plugins
 find . -mindepth 2 -type f -print -exec mv {} . \;
 rm -R -- */
 cd ..
 mv plugins/* ~/Library/Application\ Support/com.bohemiancoding.sketch3/Plugins/
+rm README.md
+rm LICENSE
 
 echo "Plugins installed; Cleaning up files..."
 cd ~/Documents/
