@@ -17,8 +17,7 @@ rm -rf README.md
 rm -rf sketch-plugins.sh
 rm -rf sketch-plugins-voice.sh
 find . -mindepth 2 -type f -print -exec mv {} . \;
-cd ..
-mv sketch-plugins/plugins/* ~/Library/Application\ Support/com.bohemiancoding.sketch3/Plugins
+mv . ~/Library/Application\ Support/com.bohemiancoding.sketch3/Plugins
 
 echo "Plugins installed; Cleaning up files..."
 cd ~/Documents/
