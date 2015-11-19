@@ -17,7 +17,6 @@ rm -rf README.md
 rm -rf sketch-plugins.sh
 rm -rf sketch-plugins-voice.sh
 find . -mindepth 2 -type f -print -exec mv {} . \;
-rm -R -- */
 cd ..
 mv plugins/* ~/Library/Application\ Support/com.bohemiancoding.sketch3/Plugins/
 
