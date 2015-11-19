@@ -15,8 +15,8 @@ find . -mindepth 2 -type f -print -exec mv {} . \;
 rm -R -- */
 cd ..
 mv plugins/* ~/Library/Application\ Support/com.bohemiancoding.sketch3/Plugins/
--rm -rf *.md
--rm -rf LICENSE
+rm -rf *.md
+rm -rf LICENSE
 
 echo "Plugins installed; Cleaning up files..."
 cd ~/Documents/
