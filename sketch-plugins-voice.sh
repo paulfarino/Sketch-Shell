@@ -2,7 +2,6 @@
 # For Sketch Downloaded via the Internet
 
 clear
-osascript -e "set Volume 10"
 say "Installing all Sketch Plugins onto your Mac"
 say "Downloading the sketch plugins..."
 cd ~/Documents/
@@ -12,13 +11,13 @@ mkdir -p sketch-plugins/plugins
 tar -zxf master.tar.gz -C sketch-plugins/plugins
 cd sketch-plugins
 cd plugins
-find . -mindepth 2 -type f -print -exec mv {} . \;
-rm -R -- */
-rm *.md
-rm LICENSE
+cd *
+rm -rf LICENSE
+rm -rf README.md
+rm -rf sketch-plugins.sh
+rm -rf sketch-plugins-voice.sh
 cd ..
-mv plugins/* ~/Library/Application\ Support/com.bohemiancoding.sketch3/Plugins/
-
+mv */* ~/Library/Application\ Support/com.bohemiancoding.sketch3/Plugins
 
 say "Plugins installed; Cleaning up files..."
 cd ~/Documents/
