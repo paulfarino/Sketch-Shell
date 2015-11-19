@@ -9,13 +9,13 @@ curl -L https://github.com/paulfarino/Sketch-Shell/tarball/master -o master.tar.
 echo "Extracting the plugins..."
 mkdir -p sketch-plugins/plugins
 tar -zxf master.tar.gz -C sketch-plugins/plugins
-cd sketch-plugins
-cd plugins
-cd */
+cd *
 rm -rf LICENSE
 rm -rf README.md
 rm -rf sketch-plugins.sh
 rm -rf sketch-plugins-voice.sh
+cd sketch-plugins
+cd plugins
 find . -mindepth 2 -type f -print -exec mv {} . \;
 rm -R -- */
 cd ..
