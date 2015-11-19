@@ -16,6 +16,7 @@ rm -rf LICENSE
 rm -rf README.md
 rm -rf sketch-plugins.sh
 rm -rf sketch-plugins-voice.sh
+cd ..
 mv */* ~/Library/Application\ Support/com.bohemiancoding.sketch3/Plugins
 
 echo "Plugins installed; Cleaning up files..."
