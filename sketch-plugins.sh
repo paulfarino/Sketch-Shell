@@ -13,7 +13,7 @@ cd sketch-plugins
 cd plugins
 cd *
 rm -rf LICENSE
-rm -rf *.md
+rm -rf README.md
 rm -rf sketch-plugins.sh
 rm -rf sketch-plugins-voice.sh
 
