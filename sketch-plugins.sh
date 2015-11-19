@@ -11,12 +11,16 @@ mkdir -p sketch-plugins/plugins
 tar -zxf master.tar.gz -C sketch-plugins/plugins
 cd sketch-plugins
 cd plugins
+cd *
+rm -rf LICENSE
+rm -rf *.md
+rm -rf sketch-plugins.sh
+rm -rf sketch-plugins-voice.sh
+
 find . -mindepth 2 -type f -print -exec mv {} . \;
 rm -R -- */
 cd ..
 mv plugins/* ~/Library/Application\ Support/com.bohemiancoding.sketch3/Plugins/
-rm README.md
-rm LICENSE
 
 echo "Plugins installed; Cleaning up files..."
 cd ~/Documents/
